@@ -1,10 +1,7 @@
 #
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
+# This is a Shiny web application. 
+# Simple Shiny App showing cheat probability of a cheat die in a population. Simple demo of Bayes' theorem.
 #
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
 #
 
 library(shiny)
