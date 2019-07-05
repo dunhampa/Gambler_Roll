@@ -17,8 +17,8 @@ ui <- fluidPage(
   
   #UI Layout
   mainPanel(
-    plotOutput("myplot", height=600),
-    h3(htmlOutput("txt"))),
+    plotOutput("myplot", height=500),
+    h4(htmlOutput("txt"))),
   sidebarPanel(
     h3("Cheat Parameters"),
     h4("Cheat Effect:"),
