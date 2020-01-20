@@ -60,7 +60,7 @@ server <- function(input, output) {
         
       #Plot formatting
       p<-ggplot(data, aes(x, probOfCheat)) + 
-          labs(title="Cheat Die Prob. By Consecutive Rolls" , x= "Consecutive Rolls", y="Probability Cheat Die Selected" ) +
+          labs(title="Cheat Die Prob.\n By \n Consecutive Rolls" , x= "Consecutive Rolls", y="Probability Cheat Die Selected" ) +
           geom_point(color=ifelse(x==numOfConsec,"red","black"), size=2) +
           geom_text(label=ifelse(x==numOfConsec,sprintf("%.3f", probOfCheat),''),fontface = "bold",color="red",hjust=.35,vjust=2 ) + 
           scale_x_continuous(breaks=x, minor_breaks = seq(1, 10, 1)) + 
