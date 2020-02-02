@@ -20,13 +20,13 @@ ui <- fluidPage(
     h3("User Input For Cheat Parameters:"),
     h4("Cheat Effect:"),
     h6("Probability of 6 on cheat die/dice (prob. values= 0 - 1)"),
-    numericInput("cheatEffect", " ",value = 1, min=0, max=1, step=.05),
+    numericInput("cheatEffect", " ",value = 0.5, min=0, max=1, step=.05),
     h4("Dice Mix:"),
     numericInput("diceNum", h6("# of Cheat Dice"), value = 1),
-    numericInput("diceDen", h6("# of Total Dice"), value = 8),
+    numericInput("diceDen", h6("# of Total Dice"), value = 100),
     h4("Consecutive Rolls:"),
     h6("# of consecutive rolls of 6"),
-    numericInput("consec"," " , value = 2, min=1, max=10)
+    numericInput("consec"," " , value = 3, min=1, max=10)
    ),   
   mainPanel(
     h4(htmlOutput("txt")),
